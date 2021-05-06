@@ -1,0 +1,29 @@
+.menu {
+    background: #006ACB;
+    position: absolute-relative;
+}
+
+.navbar {
+    background: #FFF;
+}
+
+.nav-link {
+    color: #C1E4FF
+}
+
+.nav-link:hover {
+    color: #FFF
+}
+
+.banner {
+    margin-top: 130px;
+}
+
+.banner img {
+    width: 100%;
+    height: 230px
+}
+
+.active {
+    color: #FFF
+}
