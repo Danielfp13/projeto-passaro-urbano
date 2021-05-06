@@ -283,6 +283,80 @@
       "complemento": "jjj",
       "formaDePagamento": "dinheiro",
       "id": 14
+    },
+    {
+      "endereco": "Rua juara",
+      "numero": "98",
+      "complemento": "vtgy",
+      "formaDePagamento": "debito",
+      "id": 15
+    },
+    {
+      "endereco": "mmmmm",
+      "numero": "111",
+      "complemento": "qaz",
+      "formaDePagamento": "debito",
+      "itens": [
+        {
+          "id": 1,
+          "img": {
+            "url": "/assets/ofertas/1/img1.jpg"
+          },
+          "tituilo": "Super Burger",
+          "descricao_oferta": "Rodízio de Mini-hambúrger com opção de entrada.",
+          "valor": 29.9,
+          "quantidade": 2
+        },
+        {
+          "id": 6,
+          "img": {
+            "url": "/assets/ofertas/6/img1.jpg"
+          },
+          "tituilo": "Academia de tiro",
+          "descricao_oferta": "Sessão de tiro dinâmico com Instrutor, Estande, Alvo e Equipamentos.",
+          "valor": 89.9,
+          "quantidade": 1
+        }
+      ],
+      "id": 16
+    },
+    {
+      "endereco": "bvd",
+      "numero": "ygy",
+      "complemento": "ygy",
+      "formaDePagamento": "dinheiro",
+      "itens": [
+        {
+          "id": 1,
+          "img": {
+            "url": "/assets/ofertas/1/img1.jpg"
+          },
+          "tituilo": "Super Burger",
+          "descricao_oferta": "Rodízio de Mini-hambúrger com opção de entrada.",
+          "valor": 29.9,
+          "quantidade": 3
+        }
+      ],
+      "id": 17
+    },
+    {
+      "endereco": "yyy",
+      "numero": "yyy",
+      "complemento": "yyy",
+      "formaDePagamento": "dinheiro",
+      "itens": [
+        {
+          "id": 1,
+          "img": {
+            "url": "/assets/ofertas/1/img1.jpg"
+          },
+          "tituilo": "Super Burger",
+          "descricao_oferta": "Rodízio de Mini-hambúrger com opção de entrada.",
+          "valor": 29.9,
+          "quantidade": 1
+        }
+      ],
+      "id": 18
     }
   ]
 }

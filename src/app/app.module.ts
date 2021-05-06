@@ -1,11 +1,11 @@
 import { NgModule, LOCALE_ID } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 
 import { registerLocaleData } from "@angular/common";
-import localePt from "@angular/common/locales/pt"; 
+import localePt from "@angular/common/locales/pt";
 
 import { RouterModule } from '@angular/router'
 
@@ -26,6 +26,7 @@ import { OrdemCompraComponent } from './ordem-compra/ordem-compra.component';
 import { OrdemCompraService } from './ordem-compra.service';
 import { OrdemCompraSucessoComponent } from './ordem-compra-sucesso/ordem-compra-sucesso.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CarrinhoService }  from './carrinho.service';
 
 
 @NgModule({
@@ -52,7 +53,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     RouterModule.forRoot(ROUTES)
   ],
 
-  providers: [OfertasService, { provide:LOCALE_ID, useValue: 'pt' } , OrdemCompraService],
+  providers: [
+    OfertasService,
+    { provide: LOCALE_ID, useValue: 'pt' },
+    OrdemCompraService,
+    CarrinhoService,
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
