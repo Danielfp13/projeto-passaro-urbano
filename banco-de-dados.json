@@ -262,6 +262,27 @@
       "complemento": "wsx",
       "formaDePagamento": "debito",
       "id": 11
+    },
+    {
+      "endereco": "loreana",
+      "numero": "767",
+      "complemento": "casad",
+      "formaDePagamento": "dinheiro",
+      "id": 12
+    },
+    {
+      "endereco": "hhfdhkj",
+      "numero": "hj",
+      "complemento": "jkh",
+      "formaDePagamento": "dinheiro",
+      "id": 13
+    },
+    {
+      "endereco": "uhudh",
+      "numero": "9898",
+      "complemento": "jjj",
+      "formaDePagamento": "dinheiro",
+      "id": 14
     }
   ]
 }

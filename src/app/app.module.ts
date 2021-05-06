@@ -23,9 +23,9 @@ import { ComoUsarComponent } from './oferta/como-usar/como-usar.component';
 import { OndeFicaComponent } from './oferta/onde-fica/onde-fica.component';
 import { DescricaoReduzida } from './shared/descricao-reduzida.pipe';
 import { OrdemCompraComponent } from './ordem-compra/ordem-compra.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { OrdemCompraService } from './ordem-compra.service';
 import { OrdemCompraSucessoComponent } from './ordem-compra-sucesso/ordem-compra-sucesso.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -47,7 +47,7 @@ import { OrdemCompraSucessoComponent } from './ordem-compra-sucesso/ordem-compra
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule,
+    //FormsModule,
     ReactiveFormsModule,
     RouterModule.forRoot(ROUTES)
   ],
