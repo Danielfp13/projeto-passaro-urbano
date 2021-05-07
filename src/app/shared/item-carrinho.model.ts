@@ -1,5 +1,5 @@
 import { Imagem } from './imagem.model';
- class ItemCarrinho{
+class ItemCarrinho {
     constructor(
         public id: number,
         public img: Imagem,
@@ -7,6 +7,6 @@ import { Imagem } from './imagem.model';
         public descricao_oferta: string,
         public valor: number,
         public quantidade: number
-    ){}
+    ) { }
 }
 export { ItemCarrinho }

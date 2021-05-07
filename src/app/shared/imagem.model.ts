@@ -1,3 +1,3 @@
 export class Imagem {
-    url: string
-  }
+  url: string
+}

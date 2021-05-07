@@ -15,12 +15,12 @@
                     <h4 class="card-title">{{ x.titulo }}</h4>
                     <p class="card-text">{{ x.descricao_oferta }}</p>
                     <p class="preco">{{ x.valor | currency:'BRL' }}</p>
-                    <a [routerLink]="['/oferta',x.id]" routerLinkActive="router-link-active" class="btn btn-outline-primary">Ver oferta</a>
+                    <a [routerLink]="['/oferta',x.id]" routerLinkActive="router-link-active"
+                        class="btn btn-outline-primary">Ver oferta</a>
                 </div>
             </div>
         </div>
     </div>
-
 
     <hr />
 

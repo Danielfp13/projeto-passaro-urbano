@@ -11,19 +11,16 @@ export class ComoUsarComponent implements OnInit {
 
   public comoUsar: string = '';
 
-  constructor(private route: ActivatedRoute, private service: OfertasService ) { }
+  constructor(private route: ActivatedRoute, private service: OfertasService) { }
 
 
   ngOnInit(): void {
 
-    this.route.parent?.params.subscribe((parametros: Params) => 
-    this.service.getComoUsarOfertaPorId(parametros.id)
-    .then( (resposta: string) => {
-      this.comoUsar = resposta
-    } )
-     )
-    
-
+    this.route.parent?.params.subscribe((parametros: Params) =>
+      this.service.getComoUsarOfertaPorId(parametros.id)
+        .then((resposta: string) => {
+          this.comoUsar = resposta
+        })
+    )
   }
-
 }

@@ -1,20 +1,20 @@
-.ordem-compra{
-     margin-top: 50px;
-     margin-bottom: 150px;
+.ordem-compra {
+    margin-top: 50px;
+    margin-bottom: 150px;
 }
 
-input.ng-invalid.ng-touched{
- border: 2px solid red;
-}
-
-select.ng-invalid.ng-touched{
+input.ng-invalid.ng-touched {
     border: 2px solid red;
-   }
+}
 
-   input.ng-valid.ng-touched{
+select.ng-invalid.ng-touched {
+    border: 2px solid red;
+}
+
+input.ng-valid.ng-touched {
     border: 2px solid rgb(124, 245, 10);
-   }
-   
-   select.ng-valid.ng-touched{
-       border: 2px solid rgb(124, 245, 10);
-      }
+}
+
+select.ng-valid.ng-touched {
+    border: 2px solid rgb(124, 245, 10);
+}

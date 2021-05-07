@@ -53,11 +53,11 @@ export class OrdemCompraComponent implements OnInit {
           this.formulario.value.formaPagamento,
           this.carrinhoService.exibirItens()
         )
-        
+
         this.ordemCompraService.efitivaCompra(pedido).subscribe(
-          resposta =>{
-           this.carrinhoService.limparCarrinho()
-           this.idPedidoCompra = resposta.id
+          resposta => {
+            this.carrinhoService.limparCarrinho()
+            this.idPedidoCompra = resposta.id
           })
       }
     }

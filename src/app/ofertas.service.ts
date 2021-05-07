@@ -11,12 +11,12 @@ import { retry, catchError, delay } from 'rxjs/operators';
 })
 export class OfertasService {
 
-  private uriDestaque = environment.uriBase+'/ofertas?destaque=true'
-  private uriCategoria = environment.uriBase+'/ofertas?categoria='
-  private uriCategoriaId = environment.uriBase+'/ofertas?id='
-  private uriComoUsarId = environment.uriBase+'/como-usar?id='
-  private uriOndeFicaId = environment.uriBase+'/onde-fica?id='
-  private uriOfertaDescricao = environment.uriBase+'/ofertas?descricao_oferta_like='
+  private uriDestaque = environment.uriBase + '/ofertas?destaque=true'
+  private uriCategoria = environment.uriBase + '/ofertas?categoria='
+  private uriCategoriaId = environment.uriBase + '/ofertas?id='
+  private uriComoUsarId = environment.uriBase + '/como-usar?id='
+  private uriOndeFicaId = environment.uriBase + '/onde-fica?id='
+  private uriOfertaDescricao = environment.uriBase + '/ofertas?descricao_oferta_like='
   constructor(private http: HttpClient) { }
 
 
@@ -38,24 +38,24 @@ export class OfertasService {
 
     return this.http.get<any>(`${this.uriCategoriaId}${id}`)
       .toPromise()
-      .then((resposta: any) =>  resposta[0]
+      .then((resposta: any) => resposta[0]
       )
   }
 
-  public getComoUsarOfertaPorId(id: number): Promise<string>{
+  public getComoUsarOfertaPorId(id: number): Promise<string> {
     return this.http.get<any>(`${this.uriComoUsarId}${id}`)
-    .toPromise()
-    .then( (resposta: any) =>  resposta[0].descricao )
+      .toPromise()
+      .then((resposta: any) => resposta[0].descricao)
   }
 
-  public getOndeFicaOfertaPorId(id: number) : Promise<string>{
+  public getOndeFicaOfertaPorId(id: number): Promise<string> {
     return this.http.get<any>(`${this.uriOndeFicaId}${id}`)
-    .toPromise()
-    .then( (resposta) =>  resposta[0].descricao )
+      .toPromise()
+      .then((resposta) => resposta[0].descricao)
   }
 
-  public pesquisaOferta(termo: string): Observable<Oferta[]>{
+  public pesquisaOferta(termo: string): Observable<Oferta[]> {
     return this.http.get<Oferta[]>(`${this.uriOfertaDescricao}${termo}`)
-    .pipe(retry(3),delay(500))
+      .pipe(retry(3), delay(500))
   }
 }

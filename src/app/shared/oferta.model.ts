@@ -8,4 +8,4 @@ export class Oferta {
     public valor: number;
     public destaque: boolean;
     public imagens: Imagem[]
-    }
+}

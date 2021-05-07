@@ -16,7 +16,6 @@ import { RodapeComponent } from './rodape/rodape.component';
 import { RestauranteComponent } from './restaurante/restaurante.component';
 import { DiversaoComponent } from './diversao/diversao.component';
 
-import { ROUTES } from './app.router'
 import { OfertasService } from './ofertas.service';
 import { OfertaComponent } from './oferta/oferta.component';
 import { ComoUsarComponent } from './oferta/como-usar/como-usar.component';
@@ -25,7 +24,7 @@ import { DescricaoReduzida } from './shared/descricao-reduzida.pipe';
 import { OrdemCompraComponent } from './ordem-compra/ordem-compra.component';
 import { OrdemCompraService } from './ordem-compra.service';
 import { OrdemCompraSucessoComponent } from './ordem-compra-sucesso/ordem-compra-sucesso.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { CarrinhoService }  from './carrinho.service';
 
 
@@ -48,9 +47,7 @@ import { CarrinhoService }  from './carrinho.service';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    //FormsModule,
     ReactiveFormsModule,
-    RouterModule.forRoot(ROUTES)
   ],
 
   providers: [
